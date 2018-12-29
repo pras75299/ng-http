@@ -1,0 +1,11 @@
+.card-title.text-trimmer{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.card.border-primary.cardtrimmer{
+    height: 350px;
+    max-height: 350px;
+    overflow: hidden;
+    margin: 20px 0;
+}
