@@ -14,6 +14,9 @@ export class PostComponent implements OnInit {
      this.service.getPostServ()
     .subscribe(Response => {
       this.posts = Response.json();
+    }, error => {
+      alert('An unexpected error occur.');
+      console.log(error);
     });
   }
    createPost(input: HTMLInputElement) {
@@ -23,6 +26,13 @@ export class PostComponent implements OnInit {
       .subscribe(Response => {
         post['id'] = Response.json().id;
         this.posts.splice(0, 0, post);
+      }, (error: Response) => {
+        if(error.status === 404) {
+          alert('this post has been already deleted');
+        } else {
+          alert('An unexpected error occur.');
+          console.log(error);
+        }       
       });
    }
 
@@ -30,7 +40,10 @@ export class PostComponent implements OnInit {
      this.service.updatePostServ(post)
      .subscribe(Response => {
        console.log(Response.json());
-     });
+     }, error => {
+      alert('An unexpected error occur.');
+      console.log(error);
+    });
    }
 
    deletePost(post) {
@@ -38,7 +51,14 @@ export class PostComponent implements OnInit {
      .subscribe(Response => {
        let index = this.posts.indexOf(post);
        this.posts.splice(index, 1);
-     })
+     }, (error: Response) => {
+      if(error.status === 404) {
+        alert('this post has been already deleted');
+      } else {
+        alert('An unexpected error occur.');
+        console.log(error);
+      }       
+    });
    }
 
   
