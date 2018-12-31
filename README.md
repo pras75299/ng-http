@@ -19,6 +19,7 @@
     git remote add origin https://github.com/pras75299/ng-http.git
   - -> Verify by cmd: <b>git remote -v</b>
   
- # In Angular project folder, use ngh --dir=angularapp to publish the application on GitHub page:
+ # In Angular project folder
+  - use <b> ngh --dir=angularapp</b> to publish the application on GitHub page:
   - https://.github.io/reponame/
   
