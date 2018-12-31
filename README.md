@@ -10,9 +10,8 @@
 # Build Angular Project
   Using below cmd to build Angular Project:
 
-  <b> ng build --prod --output-path githubrepository --base-href "https://pras75299.github.io/githubrepository/"</b>
-  -> Details:
-  <b> ng build --prod --output-path ng-http --base-href "https://pras75299.github.io/ng-http/"</b>  
+ - <b> ng build --prod --output-path githubrepository --base-href "https://pras75299.github.io/githubrepository/"</b> 
+ - -> Details: <b> ng build --prod --output-path ng-http --base-href "https://pras75299.github.io/ng-http/"</b>  
   
 # Publish the Application on GitHub
   - Add the repository angularapp as a remote file to the local project:
