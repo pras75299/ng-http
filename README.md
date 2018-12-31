@@ -9,7 +9,7 @@
     <b> 1- npm install -g angular-cli-ghpages </b>
   
   ### Build Angular Project
-    Using below cmd to build Angular Project:
+  Using below cmd to build Angular Project:
 
    - <b> ng build --prod --output-path githubrepository --base-href "https://pras75299.github.io/githubrepository/"</b> 
    - -> Details: <b> ng build --prod --output-path ng-http --base-href "https://pras75299.github.io/ng-http/"</b>  
