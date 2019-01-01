@@ -1,22 +1,24 @@
-<div *ngFor="let user of users" class="card">
-    <div class="card-header">
-      {{user.name}} 
-      <br>
-      <small>{{user.username}}</small>
-      <hr>
-      <p>{{user.email}}</p>
-    </div>
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <h5>Address</h5>
-        <p>{{user.address['street']}}</p>
-        <p>{{user.address['suite']}}</p>
-        <p>{{user.address['city']}}</p>
-        <p>{{user.address['zipcode']}}</p>
-        <p><span class="px-4">{{user.address['geo']['lat']}}</span> <span>{{user.address['geo']['lng']}}</span></p>
-        <p>{{user.phone}}</p>
-        <p>{{user.website}}</p>
-        <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
-      </blockquote>
-    </div>
-</div>
+<div class="container my-4 py-4">
+  <div *ngFor="let user of users" class="card">
+      <div class="card-header">
+        {{user.name}} 
+        <br>
+        <small>{{user.username}}</small>
+        <hr>
+        <p>{{user.email}}</p>
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <h5>Address</h5>
+          <p>{{user.address['street']}}</p>
+          <p>{{user.address['suite']}}</p>
+          <p>{{user.address['city']}}</p>
+          <p>{{user.address['zipcode']}}</p>
+          <p><span class="px-4">{{user.address['geo']['lat']}}</span> <span>{{user.address['geo']['lng']}}</span></p>
+          <p>{{user.phone}}</p>
+          <p>{{user.website}}</p>
+          <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
+        </blockquote>
+      </div>
+  </div>
+</div>  
