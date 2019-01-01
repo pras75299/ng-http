@@ -1,12 +1,6 @@
 {
   "hosting": {
-    "public": "dist/ng-http",
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ],
+    "public": "dist/ng-http/",
     "ignore": [
       "firebase.json",
       "**/.*",
