@@ -17,8 +17,8 @@
   ### Publish the Application on GitHub
   - Add the repository angularapp as a remote file to the local project:
   
-        <b> git init </b> </br>
-        <b> git remote add origin https://github.com/pras75299/ng-http.git </b>
+        * git init 
+        * git remote add origin https://github.com/pras75299/ng-http.git 
   - -> Verify by cmd: <b>git remote -v</b>
 
    ### In Angular project folder
